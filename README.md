@@ -54,9 +54,9 @@ allprojects {
 }
 ```
 
-Step 2. Add the dependency, [Lastest release](https://github.com/busycount/edittext/releases)
+Step 2. Add the dependency
 ```
 dependencies {
-    implementation 'com.github.busycount:edittext:lastest'
+    implementation 'com.github.busycount:edittext:0.2'
 }
 ```

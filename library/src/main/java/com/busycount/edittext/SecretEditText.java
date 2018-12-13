@@ -20,7 +20,6 @@ import android.view.View;
  */
 public class SecretEditText extends View {
 
-
     public SecretEditText(Context context) {
         this(context, null);
     }
@@ -39,7 +38,6 @@ public class SecretEditText extends View {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(context, attrs);
     }
-
 
     private StringBuilder strBuilder;
     private int pwdSize;
@@ -146,6 +144,9 @@ public class SecretEditText extends View {
     }
 
     public void delete() {
+        if (strBuilder.length() == 0) {
+            return;
+        }
         strBuilder.setLength(strBuilder.length() - 1);
         invalidate();
     }
